@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --right-sidebar:#f4f8fb;
+    --search-input-color:#e7ecf0;
+    --sky-blue:#1ea1f3;
+    --white:#ffffff;
+    --black:#000000;
+    --tab-color:#e7e7e8;
+    --gray:#808080;
+    --border:#80808031;
+}
+
+*{
+    outline: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.valign-center{
+    align-self: center;
+}
+
+.section-container{
+}
+
+/* ########################################################################################################## */
+/* Left sidebar Styling */
+
+.left-sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid var(--border);
+}
+
+.main-container{
+    position: absolute;
+    top: 0;
+    left:320px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.right-sidebar{
+    top: 0;
+    left:920px;
+    position: absolute;
+    max-width: 446px;
+    width: 100%;
+    height: 100%;
+    background-color: coral; 
+}
+
+/* Left Side bar contents styling */
+
+.left-sidebar-content-wrapper{
+    padding: 0px 50px;
+}
+
+/* Logo Styling */
+
+.top-left-block{
+    height: 50px;
+    display: flex;
+}
+
+.logo-container{
+    align-self: center;
+}
+
+.logo-container svg{
+    padding:0 15px;
+    width: 30px;
+}
+
+/* left sidebar tabs */
+
+.tab-cover{
+    margin:0px 0;
+    font-weight:300;
+}
+
+.tab-wrapper{
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.tab-wrapper:hover{
+    background-color: var(--tab-color);
+}
+
+.tab-icon{
+    padding-right:15px;
+}
+
+.tab-text{
+    padding: 0 10px 0 0;
+    font-size: 20px;
+}
+
+.tab-cover a:focus-within{
+    font-weight: 500;
+}
+
+/* left sidebar tweet button */
+
+.left-sidebar-tweet-button{
+    padding: 5px 0;
+}
+
+.left-sidebar-tweet-button svg{
+    height: 20px;
+    display: none;
+}
+
+.left-side-user-control-name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.left-side-user-control-twitter-id{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.left-sidebar-tweet-button button{
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--sky-blue);
+    border: none;
+    width: 100%;
+    padding:15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Left side user identity control styling */
+
+.left-side-user-control-wrapper{
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    padding-left:35px;
+}
+
+.left-side-user-control-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+    border-radius: 30px;
+}
+
+.left-side-user-control-container:hover{
+    background-color: var(--tab-color);
+}
+
+.left-side-user-control-icon{
+    display: flex;
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    background-color: var(--sky-blue);
+    border-radius: 50%;
+}
+
+
+/* ########################################################################################################## */
+/* Main container section styling */
+
+.top-main-block{
+    height: 50px;
+    display: flex;
+    padding:0 15px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid var(--border);
+}
+
+.main-container-tweet-block{
+    display: flex;
+}
+
+.main-container-top-heading{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Tweet block */
+
+.main-container-user-control-icon{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: var(--sky-blue);
+}
+
+.scrollable-main-container{
+    padding: 10px 15px;
+}
+
+.main-container-input-field-container{
+    color: var(--gray);
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+
+.main-container-input-field{
+    max-width: 500px;
+    width: 500px;
+    word-wrap: break-word;
+    position: relative;
+    top: 20PX;
+}
+
+.main-container-input-field:empty::before{
+    content: "What's happening?";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* Media Queries for responsive desing */
+
+@media screen and (max-width:1024px) {
+    .tab-text{
+        display: none;
+    }
+
+    .left-sidebar-tweet-button svg{
+        height: 20px;
+        display: block;
+    }
+    
+    .left-sidebar-tweet-button-text{
+        display: none;
+    }
+
+    .left-sidebar-tweet-button{
+        display: flex;
+        margin-left: 7px;
+    }
+
+    .tab-icon{
+        padding: 5px;
+    }
+
+    .left-sidebar{
+        width: 80px;
+    }
+
+    .left-sidebar-content-wrapper{
+        padding: 0;
+    }
+
+    .left-side-user-control-text{
+        display: none;
+    }
+
+    .left-side-user-control-more-icon{
+        display: none;
+    }
+
+    .left-side-user-control-icon{
+        margin: 5px;
+    }
+
+    .left-side-user-control-wrapper{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}
+
+@media screen and (max-width:320px) {
+
+}
