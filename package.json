@@ -1,0 +1,25 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "Twitter dashboard clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwary-Jharbade/Twitter-Clone.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Dashboard",
+    "UI",
+    "Clone"
+  ],
+  "author": "Ashwary Jharbade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ashwary-Jharbade/Twitter-Clone/issues"
+  },
+  "homepage": "https://github.com/Ashwary-Jharbade/Twitter-Clone#readme"
+}
