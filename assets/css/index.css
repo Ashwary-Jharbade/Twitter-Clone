@@ -9,6 +9,8 @@
     --tab-color:#e7e7e8;
     --gray:#808080;
     --border:#80808031;
+    --light-sky-blue:#afe6ff5b;
+    --list-items:#f7f9f9;
 }
 
 *{
@@ -27,7 +29,7 @@ a{
     color: var(--black);
 }
 
-a:focus{
+a:focus{ 
     outline: none;
     text-decoration: none;
 }
@@ -37,38 +39,42 @@ a:focus{
 }
 
 .section-container{
+    display: flex;
+    align-items: stretch;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+}
+
+.flex-left{
+    flex:2.2;
+    position: relative;
+}
+
+.flex-mid{
+    flex:5;
+}
+
+.flex-right{
+    flex:3;
 }
 
 /* ########################################################################################################## */
 /* Left sidebar Styling */
 
 .left-sidebar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 320px;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     border-right: 1px solid var(--border);
+    position: fixed;
 }
 
 .main-container{
-    position: absolute;
-    top: 0;
-    left:320px;
-    max-width: 600px;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .right-sidebar{
-    top: 0;
-    left:920px;
-    position: absolute;
-    max-width: 446px;
-    width: 100%;
-    height: 100%;
-    background-color: coral; 
+    height: 100vh;
+    border-left: 1px solid var(--border);
 }
 
 /* Left Side bar contents styling */
@@ -161,7 +167,7 @@ a:focus{
 
 .left-side-user-control-wrapper{
     position: absolute;
-    bottom: 10px;
+    top: 80px;
     width: 80%;
     padding-left:35px;
 }
@@ -190,12 +196,25 @@ a:focus{
 /* ########################################################################################################## */
 /* Main container section styling */
 
+.main-container{
+    z-index: 0;
+}
+
+.top-main-block-header{
+    height: 50px;
+    background-color: var(--white);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
 .top-main-block{
     height: 50px;
     display: flex;
     padding:0 15px;
     justify-content: space-between;
     border-bottom: 0.5px solid var(--border);
+    background-color: var(--white);
 }
 
 .main-container-tweet-block{
@@ -217,13 +236,18 @@ a:focus{
 }
 
 .scrollable-main-container{
-    padding: 10px 15px;
+    
+}
+
+.main-container-user-box{
+    width: 100%;
 }
 
 .main-container-input-field-container{
     color: var(--gray);
     position: relative;
     top: -10px;
+    margin:0 10px;
     font-size: 20px;
 }
 
@@ -233,6 +257,7 @@ a:focus{
     word-wrap: break-word;
     position: relative;
     top: 20PX;
+    color: var(--black);
 }
 
 .main-container-input-field:empty::before{
@@ -241,13 +266,213 @@ a:focus{
     font-weight: 400;
 }
 
+.main-container-tweet-block-dropdown{
+    margin:25px 0 10px 10px; 
+    color: var(--sky-blue);
+    font-weight: 500;
+    font-size: 14px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-container-tweet-block{
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.main-container-tweet-block-dropdown:hover{
+    background-color: var(--light-sky-blue);
+}
+
+.main-container-input-field-block{
+    border-bottom: 1px solid var(--border);
+}
+
+/* Media controls styling */
+.main-contianer-media-controls{
+    width: 100%;
+    display: flex;
+    padding: 10px 0 0 0;
+    justify-content: space-between;
+}
+
+.main-container-media-icon{
+    padding: 7px 8px 2px 8px;
+    margin:0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-container-tweet-button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.main-container-media-icon:hover{
+    background-color: var(--light-sky-blue);
+}
+
+.main-container-media-options-container{
+    display: flex;
+}
+
+/* ############################################################################# */
+/* Right side contianer styling */
+
+.search-box{
+    display: flex;
+    align-self: center;
+    background-color: var(--search-input-color);
+    width: 100%;
+    margin: 0 30px 0 10px;
+    border: 1px solid var(--search-input-color);
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+.search-icon{
+    padding: 1px 5px 0 15px;
+    color: var(--gray);
+}
 
 
+.search-field{
+    width: 80%;
+}
 
+.search-field input{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.search-box:focus-within{
+    background-color: var(--white);
+    border:1px solid var(--sky-blue)
+}
+
+.search-box:focus-within * span{
+    color: var(--sky-blue);
+}
+
+/* Whats happening block styling */
+
+.whats-happening-block{
+    padding: 10px 45px 10px 25px;
+}
+
+.block-content{
+    background-color: var(--list-items);
+    border-radius: 20px;
+}
+
+.block-heading{
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Right sidebar List */
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item:hover{
+    background-color: var(--search-input-color);
+    cursor: pointer;
+}
+
+.text-wrapper{
+    padding:10px 15px;
+}
+
+.list-item-type{
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--gray);
+}   
+
+.list-item-headline{
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.img-wrapper{
+    padding: 15px;
+}
+
+.img-container{
+    width: 70px;
+    height: 70px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.show-more-text{
+    padding: 15px;
+}
+
+.show-more-text a{
+    color: var(--sky-blue);
+    font-weight: 400;
+}
+
+
+/* Follow list styling */
+
+.follow-list-item{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+}
+
+.follow-list-item:hover{
+    background-color: var(--search-input-color);
+    cursor: pointer;
+}
+ 
+.follow-list-text{
+    margin-left: 10px;
+}
+
+.follow-button{
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.follow-list-item-flex{
+    display: flex;
+}
+
+.follow-list-name:hover{
+    text-decoration: underline;
+}
 
 /* Media Queries for responsive desing */
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     .tab-text{
         display: none;
     }
@@ -306,4 +531,4 @@ a:focus{
 
 @media screen and (max-width:320px) {
 
-}
+} */
