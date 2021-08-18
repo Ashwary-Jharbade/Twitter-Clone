@@ -4,7 +4,7 @@
     --right-sidebar:#f4f8fb;
     --search-input-color:#e7ecf0;
     --sky-blue:#1ea1f3;
-    --white:#ffffff;
+    --white:#ffffff; 
     --black:#000000;
     --tab-color:#e7e7e8;
     --gray:#808080;
@@ -40,34 +40,24 @@ a:focus{
 
 .section-container{
     display: flex;
+    align-items: stretch;
     max-width: 1500px;
     margin: auto;
-}
-
-.flex{
-    display: flex;
-}
-
-.flex-main{
-    width: 950px;
-}
-
-.flex-left{
-    width: 291px;
-    height: 100vh;
-}
-
-.flex-mid{
-    width:650px;
-    height: 100vh;
     position: relative;
 }
 
-.flex-right{
-    width: 400px;
-    height: 100vh;
+.flex-left{
+    flex:2.15;
+    /* position: relative; */
 }
 
+.flex-mid{
+    flex:5;
+}
+
+.flex-right{
+    flex:2.8;
+}
 
 /* ########################################################################################################## */
 /* Left sidebar Styling */
@@ -692,7 +682,7 @@ a:focus{
 @media screen and (max-width:480px) {
     
 }
- 
+
 @media screen and (max-width:320px) {
 
 } */
