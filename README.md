@@ -7,6 +7,8 @@ Cloning Twitter website home dashboard - [Twitter page demo](https://ashwary-jha
 - Getting started
   - Prequisites
 - Road map
+- Project breakdown
+- Project Snapshot
 - Contact
 - Acknowledgement
 
@@ -42,18 +44,17 @@ The project is an attempt to clone the existing (Aug 2021) Twitter website home 
 - Host your project on open source platoforms or paid platforms to make it live.
 - Always showcase you work, seek feedback and learn.
 
-### Project breakdown using draw.io
+### Project breakdown
 Flow diagram of the twitter dashboard to be created. 
 
 ![twitter-layout](https://user-images.githubusercontent.com/55127977/129687395-8460bb27-b021-42eb-aafb-e25bfafcdc18.png)
 
-### Evernote Document Link:
+#### Evernote Document Link:
 ```
 ```
-#### Github page 
-```
-https://ashwary-jharbade.github.io/Twitter-Clone/
-```
+### Project snapshot
+
+![Screenshot (1187)](https://user-images.githubusercontent.com/55127977/130099272-2b4f8027-e5b1-4ded-8f86-48988638831d.png)
 
 ### Contact
 
@@ -65,6 +66,7 @@ https://www.linkedin.com/in/ashwary-jharbade/
 - Git
 - Github
 - Github pages
+- Evernote
 - Draw.io
 - VS Code Studio
 - Feather Icons
