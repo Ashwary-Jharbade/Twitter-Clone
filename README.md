@@ -31,7 +31,7 @@ The project is an attempt to clone the existing (Aug 2021) Twitter website home 
 #### Prequisites
 - Basic understanding of HTML, CSS and design approach uisng draw.io.
 
-### Road map for building any project or project like Netflix.
+### Road map for building any project or project like Twitter home dashboard.
 - Hit the original Twitter url.
 - Now try to visulaize and understand the respective page high level structure
 - Use browser inspect tool to have proper understanding of the web page
