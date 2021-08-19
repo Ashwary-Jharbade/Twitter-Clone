@@ -2,8 +2,9 @@
 Trying to clone twitter dashboard UI using HTML and CSS
 
 Non-responsive twitter clone git hub page:
-
-*     https://ashwary-jharbade.github.io/Twitter-Clone/
+```
+https://ashwary-jharbade.github.io/Twitter-Clone/
+```
 
 Flow diagram of the twitter dashboard to be created. 
 
