@@ -1,6 +1,9 @@
 ### Twitter-Clone
 Cloning Twitter website home dashboard - [Twitter page demo](https://ashwary-jharbade.github.io/Twitter-Clone/)
 
+### Project snapshot
+![Screenshot (1188)](https://user-images.githubusercontent.com/55127977/130203534-74fbbcf8-418c-4827-821a-5fa74bd70ec1.png)
+
 ### Tabel of Contents -
 - About the project
   - Built with
@@ -8,7 +11,6 @@ Cloning Twitter website home dashboard - [Twitter page demo](https://ashwary-jha
   - Prequisites
 - Road map
 - Project breakdown
-- Project Snapshot
 - Contact
 - Acknowledgement
 
@@ -52,9 +54,6 @@ Flow diagram of the twitter dashboard to be created.
 #### Evernote Document Link:
 ```
 ```
-### Project snapshot
-
-![Screenshot (1187)](https://user-images.githubusercontent.com/55127977/130099272-2b4f8027-e5b1-4ded-8f86-48988638831d.png)
 
 ### Contact
 
