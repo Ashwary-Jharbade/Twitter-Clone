@@ -1,5 +1,7 @@
 ### Twitter-Clone
-Cloning Twitter website home dashboard - [Twitter page demo](https://ashwary-jharbade.github.io/Twitter-Clone/)
+Cloning Twitter website home dashboard
+
+### [Click to see - Twitter page demo](https://ashwary-jharbade.github.io/Twitter-Clone/)
 
 ### Project snapshot
 ![Screenshot (1188)](https://user-images.githubusercontent.com/55127977/130203534-74fbbcf8-418c-4827-821a-5fa74bd70ec1.png)
