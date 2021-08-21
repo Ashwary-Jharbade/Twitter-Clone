@@ -58,7 +58,7 @@ a:focus{
 }
 
 .flex-mid{
-    width:650px;
+    width:658px;
     height: 100vh;
     position: relative;
 }
@@ -83,7 +83,6 @@ a:focus{
 }
 
 .right-sidebar{
-    height: 100vh;
     border-left: 1px solid var(--border);
 }
 
@@ -364,7 +363,7 @@ a:focus{
     color: var(--gray);
 }
 
-.post-tag{
+.post-tag:hover{
     text-decoration: underline;
 }
 
