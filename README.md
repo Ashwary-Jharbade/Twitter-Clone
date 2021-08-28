@@ -3,6 +3,10 @@ Cloning Twitter website home dashboard
 
 ### [Click to see - Twitter page demo](https://ashwary-jharbade.github.io/Twitter-Clone/)
 
+### Live Snapshot
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/55127977/131227197-44b93d29-a403-4738-a4d3-d57dd7aa7b2b.gif)
+
 ### Project snapshot
 ![Screenshot (1188)](https://user-images.githubusercontent.com/55127977/130203534-74fbbcf8-418c-4827-821a-5fa74bd70ec1.png)
 
